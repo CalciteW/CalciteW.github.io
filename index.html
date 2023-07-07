@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Zircon</title>
-	<style>
-		html, body {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		}
-		
-		img {
-			object-fit: cover;
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: "江西拙楷3.0", sans-serif; /* 替换成你想要使用的特定字体 */
+	  src: url("江西拙楷.ttf");
+    }
+    
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-size: 128px;
+      letter-spacing: 11px; /* 调整字间距 */
+    }
+    
+    /* 在屏幕宽度小于等于600像素（移动端）时应用不同的字体大小 */
+    @media only screen and (max-width: 600px) {
+      .vertical-text {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/wsqstar/ResHosting@0.031/build/js/Sakura.js"></script>
-	<img src="p.png" alt="Yao">
+  <div class="vertical-text">
+    张子耀 <!-- 将"Your Name" 替换为你的姓名 -->
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/wsqstar/ResHosting@0.031/build/js/Sakura.js"></script>
 </body>
 </html>
